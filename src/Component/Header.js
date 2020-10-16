@@ -6,10 +6,10 @@ function Header() {
        <>
        <div className ="newImg">
             <div className="newHeaderTop">
-                <h1>Fashion <br/>
-                is Freedom
+                <h1>Keeping yourself fit<br/>
+                Gives good health
                 </h1>
-                <button className="headerBtn">Shop now</button>
+                <button className="headerBtn">Contact US</button>
             </div>
         </div>
         <Intructors/>

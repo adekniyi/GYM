@@ -1,38 +1,101 @@
-.App {
-  text-align: center;
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Beginning of Nav Bar styling */
+.TopNav{
+  background-color:green;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo{
+  height: 70px;
+  width: 70px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.SubTopNav{
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 80%;
+  margin:0 auto;
+  /* padding:0 20px 0 20px; */
+  height: 60px;
+}
+/* .NavListing{
+  width: 50%;
+}
+.NavListing ul{
+  display: flex;
+  width: 50%;
+}
+.NavListing ul li{
+  list-style: none;
+} */
+
+
+ul{
+  display: flex;
+  width: 30%;
+}
+ul a li{
+  color:white;
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+ul a{
+  width: 50%;
+}
+
+/* Ending of Nav Bar styling */
+/* Beginning of Image Header styling */
+
+.newImg{
+  position: relative;
+  width: 100%;
+  height: 630px;
+  background:  url(/images/gina-lin-m27OTMegUyA-unsplash.jpg),#7abcff;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(145, 145, 145, 0.678);
+}
+.newImg::before {
+  position: absolute;
+  content : '';
+  top : 0; left : 0;
+  background-color: rgba(0, 0, 0, .5);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.newHeaderTop {
+  position: absolute;
+  color : white;
+  z-index: 3;
+  top: 25%;
+  padding-left: 5rem;
+  text-align: left;
+  width: 100%;
+}
+
+.newHeaderTop h1 {
+font-size: 4rem;
+}
+
+.headerBtn{
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  padding: 10px;
   color: white;
+  background-color: rgb(110, 110, 231);
+  border: none;
+}
+.headerBtn:hover{
+  color: rgb(110, 110, 231);
+  background-color: transparent;
+  border: 1px solid rgb(110, 110, 231);
 }
 
-.App-link {
-  color: #61dafb;
-}
+/* Ending of Image Header styling */
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

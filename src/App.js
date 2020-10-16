@@ -1,8 +1,8 @@
 import React from 'react';
+import {Switch, Route} from 'react-router-dom';
 import './App.css';
 import Navbar from './Component/Navbar';
 import Header from './Component/Header';
-import Instructors from './Component/Intructors';
 import Facilities from './Component/Facilities';
 import AboutUs from './Component/AboutUs';
 import Contact from './Component/Contact'
@@ -12,11 +12,12 @@ function App() {
   return (
    <>
     <Navbar/>
-    <Header/>
-    <Instructors/>
-    <Facilities/>
-    <AboutUs/>
-    <Contact/>
+      <Switch>
+        <Route exact path="/" component={Header}/>
+        <Route path="/Facilities" component={Facilities}/>
+        <Route path="/Contact" component={Contact}/>
+        <Route path="/AboutUs" component={AboutUs}/>
+      </Switch>
     <Footer/>
    </>
    
